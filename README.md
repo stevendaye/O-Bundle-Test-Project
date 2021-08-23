@@ -68,7 +68,7 @@ Creating a feature that will show the product's second image when it is hovered 
       this.onRemoveProductSecondImage.bind(this)
     );
   ```
-  *NOTE*: In the begining, my first implementation was a hover over each thumbnail of the product images which displays the corresponding image in the original image container on the product page: https://space-store.mybigcommerce.com/special-item/. But after reading carefully the instructions again, I understood that the hover feature was meant on the category page.
+  **NOTE**: In the begining, my first implementation was a hover over each thumbnail of the product images which displays the corresponding image in the original image container on the product page: https://space-store.mybigcommerce.com/special-item/. But after reading carefully the instructions again, I understood that the hover feature was meant on the category page.
 
 ## Feature 2
 --------------------
