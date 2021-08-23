@@ -50,7 +50,7 @@ Creating a feature that will show the product's second image when it is hovered 
 2. Steps
   - Generally, Cornerstone theme template files are located in `templates/pages`. Each of these files have their corresponding JavaScript `.js` files in `assets/js/theme`. These latter contains event handlers and logic for managing page specific element and actions.
   
-  - Therefore, since the hover feature was to be implemented in the category page **Special Items**, I located the file `templates/pages/category.html` which led me down to `templates/components/common/responsive-img.html`. I then located the corresponding JavaScript file that is `assets/js/theme/category.js`.
+  - Therefore, since the hover feature was to be implemented on the category page **Special Items**, I located the file `templates/pages/category.html` which led me down to `templates/components/common/responsive-img.html`. I then located the corresponding JavaScript file that is `assets/js/theme/category.js`.
   - For this, I needed to know some Handlebars helpers like `getImageSrcset` to get the product's second image from the CDN and create event handlers to make the switch of the image on hover. Therefore I added the following logics in:
 
   -- `templates/components/common/responsive-img.html` (Line 40)
@@ -68,7 +68,7 @@ Creating a feature that will show the product's second image when it is hovered 
       this.onRemoveProductSecondImage.bind(this)
     );
   ```
-  *NOTE*: In the begining, my first implementation was a hover over each thumbnail of the product images which displays the corresponding image in the original image container on the product page: https://space-store.mybigcommerce.com/special-item/. But after reading carefully the instructions again, I understood that the hover feature was meant in the category page.
+  *NOTE*: In the begining, my first implementation was a hover over each thumbnail of the product images which displays the corresponding image in the original image container on the product page: https://space-store.mybigcommerce.com/special-item/. But after reading carefully the instructions again, I understood that the hover feature was meant on the category page.
 
 ## Feature 2
 --------------------
@@ -118,7 +118,7 @@ Adding a button at the top of the category page labeled *Add All To Cart*. When 
 If the cart has an item in it - show a button next to the **Add All To Cart** button which says **Remove All Items**. When clicked it should clear the cart and notify the user.
 
 1. Result
-  - Go to *Special Items Category*.
+  - Go to **Special Items Category**.
   - Click the button **Remove All Items** after clicking on **Add All To Cart** at the top of the category.
 
 2. Steps
@@ -152,7 +152,7 @@ If a customer is logged in - at the top of the category page show a banner that 
   - At the top of the page, click on *SIGN IN*. *REGISTER* first if you don't have an account.
   - Once registered or signed in, a barner or the user's basic details appears at the top the category page.
 
-  **NOTE**: Since this is bar that shows the user's details, I've put it at the very top of the page so that it appears everywhere you browse. If we don't want this to happen we can only inplement in the Category page in `templates/pages/category.html`.
+  **NOTE**: Since this is bar that shows the user's details, I've put it at the very top of the page so that it appears everywhere you browse. If we don't want this to happen we can tehn inplement it on the Category page in `templates/pages/category.html`.
 
 2. Steps
   - I first located the file `templates/pages/home.html` which led me to the partial file `templates/layout/base.html` then to the file `templates/components/common/header.html`. Having the logging user's details which were made avaiable through the Handlebars Customer Object, I added:
