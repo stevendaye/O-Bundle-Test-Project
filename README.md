@@ -32,7 +32,7 @@ Be sure you include the Preview Code for the Bigcommerce Store, along with its U
 I created a trial BigCommerce store called *Space Store* . Next, I created a product called **Special Item** which I asigned to a category I created called **Special Items**. I added 4 images during the product creation. I deleted all other demo products in each default categories that come with the Standard Cornerstone theme. Only the **Special Item** product I created is found in the **Special Items** category. Only the Storefront APIs were used as required.
 
 ## Store Access
-- Preview Code: There is no preview code
+- Preview Code: There is no preview code set up. But it used to be: **h88rpw7te3**
 - Store Url: https://space-store.mybigcommerce.com/
 
 ## Set Up
