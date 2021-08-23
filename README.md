@@ -210,3 +210,6 @@ Once completed, to make sure my local changes are live I pushed my changes with 
 - https://developer.bigcommerce.com/stencil-docs/storefront-customization/directory-structure#templates
 - https://developer.bigcommerce.com/api-docs/storefront/tutorials/carts
 - https://developer.bigcommerce.com/stencil-docs/deploying-a-theme/bundling-and-pushing
+
+# Improvements
+If I were given more time or was a requirement, I would set breaking points so as to control the responsiness on all kind of screen sizes for all additional css styles I have added like the User's details header for instance.
