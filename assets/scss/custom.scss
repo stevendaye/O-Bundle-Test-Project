@@ -1,0 +1,67 @@
+/* ## Custom Stencil Scss Library ## */
+/* Customer Header */
+.customer-details {
+  width: 100%;
+  background: #666666;
+  color: white;
+  margin: 0;
+  padding: 1rem 2rem;
+}
+.customer-about {
+  display: flex;
+  justify-content: right;
+  padding: 0;
+  margin: 0;
+}
+.customer-about p {
+  margin: 0 1.5rem 0 0;
+}
+
+/* Display */
+.d-flex {
+  display: flex;
+}
+
+/* Buttons */
+.add-all-to-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button--danger {
+  display: none;
+  color: white;
+  background: crimson;
+}
+
+/* Notification */
+.cart-notification {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-notification,
+.remove-notification {
+  display: none;
+  background: white;
+  border: 1px solid green;
+  border-left: 7px solid green;
+  border-radius: 3px;
+  padding: 0.7rem 2rem;
+}
+
+.add-notification i,
+.remove-notification i {
+  color: green;
+}
+
+/* Miscellaneous */
+.w-100 {
+  width: 100%
+}
+.clear--both {
+  clear: both;
+}

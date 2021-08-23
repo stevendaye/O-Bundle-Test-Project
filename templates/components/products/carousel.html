@@ -1,0 +1,36 @@
+<section
+  class="productCarousel"
+  data-list-name="{{ list }}"
+  data-slick="{
+        &quot;infinite&quot;: false,
+        &quot;mobileFirst&quot;: true,
+        &quot;slidesToShow&quot;: 2,
+        &quot;slidesToScroll&quot;: 2,
+        &quot;slide&quot;: &quot;[data-product-slide]&quot;,
+        &quot;responsive&quot;: [
+            {
+                &quot;breakpoint&quot;: 800,
+                &quot;settings&quot;: {
+                    &quot;slidesToShow&quot;: {{ columns }},
+                    &quot;slidesToScroll&quot;: {{ columns }}
+                }
+            },
+            {
+                &quot;breakpoint&quot;: 550,
+                &quot;settings&quot;: {
+                    &quot;slidesToShow&quot;: 3,
+                    &quot;slidesToScroll&quot;: 3
+                }
+            }
+        ]
+    }"
+>
+  {{#each products}}
+  <div data-product-slide class="productCarousel-slide">
+    {{> components/products/card settings=../settings theme_settings=../theme_settings customer=../customer event="list" position=(add @index 1)}}
+  </div>
+  {{/each}}
+  {{#if products.length '>' 1}}
+  {{> components/carousel-content-announcement}}
+  {{/if}}
+</section>
