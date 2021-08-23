@@ -72,7 +72,7 @@ Creating a feature that will show the product's second image when it is hovered 
 
 ## Feature 2
 --------------------
-Adding a button at the top of the category page labeled *Add All To Cart*. When clicked, the product will be added to the cart then notify the user that the product has been added.
+Adding a button at the top of the category page labeled **Add All To Cart**. When clicked, the product will be added to the cart then notify the user that the product has been added.
 
 1. Result
   - Go to **Special Items Category**.
@@ -149,7 +149,7 @@ If the cart has an item in it - show a button next to the **Add All To Cart** bu
 If a customer is logged in - at the top of the category page show a banner that shows some customer details (i.e. name, email, phone etc). This should utilize the data that is rendered via Handlebars on the Customer Object.
 
 1. Result
-  - At the top of the page, click on *SIGN IN*. *REGISTER* first if you don't have an account.
+  - At the top of the page, click on *SIGN IN*. You can *REGISTER* first if you don't have an account.
   - Once registered or signed in, a barner or the user's basic details appears at the top the category page.
 
   **NOTE**: Since this is bar that shows the user's details, I've put it at the very top of the page so that it appears everywhere you browse. If we don't want this to happen we can tehn inplement it on the Category page in `templates/pages/category.html`.
